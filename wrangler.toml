@@ -1,0 +1,20 @@
+name = "easy-wrangler"
+compatibility_date = "2023-12-01"
+
+[env.production]
+name = "easy-wrangler"
+routes = [
+  { pattern = "easy-wrangler.com", custom_domain = true },
+]
+
+[env.production.vars]
+MODE = "production"
+TARGET_UPSTREAM = ""
+
+[env.staging]
+name = "easy-wrangler-staging"
+# route = { pattern = "easy-wrangler-staging.com", custom_domain = true }
+
+[env.staging.vars]
+MODE = "staging"
+TARGET_UPSTREAM = ""
