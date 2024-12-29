@@ -18,10 +18,10 @@ jobs:
         node-version: '20' # 根据需要设置Node.js版本
 
     - name: Install dependencies
-      run: npm install
+      run: yarn install
 
     - name: Update dependencies
-      run: npm update
+      run: yarn upgrade
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v7
